@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link href="p9.css" rel="stylesheet" >
+
+    <title> Lam Le Portfolio </title>
+
+  </head>
+ <body>
+  <div class="page">
+
+    <div class="intro-header">
+      <div class="bg-image parallax-bg">
+      
+      </div>
+      <div class="header-content row">
+        
+        <img src="img/back.png" id="back"
+         onmouseover="this.src='img/backhover.png'"
+         onmouseout="this.src='img/back.png'"/>
+        
+
+         <img src="img/titleportfolio.png" id="title"/>
+        <h2>Short Film</h2> 
+
+      </div>
+    </div>
+    <div class="content">
+      
+       <br>
+
+       <div class="clearfix"></div> 
+
+      <div class="row">
+
+          <h1>About</h1>
+          <p>
+          This is a part of a project made for an assignment for RMIT University (Bachelor of Digital Media). 
+          The brief is to create a digital artwork with theme of my choice. I decided to create a video contained of short videos that I filmed a long time ago combined with 3D elements like TV to portray a broken love.
+          
+
+          </p>
+          <p> </p>
+          <iframe width="560" height="515" src="https://www.youtube.com/embed/yOQ9TY7aEmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+
+
+<div class="clearfix"></div>
+      <div class="row">
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <h1> Process </h1>
+        <p> </p>
+        <div class="responsive2">
+  <div class="gallery">
+    
+      <img src="img/retroTV.png"  width="600" height="400">
+  
+    <div class="desc"> 3D Model</div>
+  </div>
+</div>
+
+
+<div class="responsive2">
+  <div class="gallery">
+    
+      <img src="img/videophoto.png" alt="Forest" width="600" height="400">
+  
+    <div class="desc"> One of my video edited</div>
+  </div>
+</div>
+
+  <div class="responsive2">
+  <div class="gallery">
+    
+      <img src="img/unitywork.png" alt="Forest" width="600" height="400">
+  
+    <div class="desc"> My work in Unity</div>
+</div>
+</div>
+       
+        <p> </p>
+          <p>
+          Inspired by the title ‘Ten Thousand Light-years From Home’ by James Tiptree, I made this artwork with the idea of longevity of love in space and time. </p>
+<p>To make this works, I used some of my video clips I filmed with my friends, edited its colors in Premiere Pro, and export it to Unity. Then I took the 3D retro TV design in Google Poly and put it in space Skybox and scripted it so it floated around. Then, I duplicated it and put the videos on each of the TV. </p>
+<p> An overall outcome is a group of TV lined to heart shape slowly getting swallowed by a black hole. Each TV screen shows videos of couples in love and broke up repeatedly. </p>
+
+<p> Does eternal love exist? Will love still last despite being 10 thousand light-years (9.460731e+16km) apart? Or will it be swallowed by the black hole and disappear? </p>
+
+<p>In the space where nothing exists, memories of love are still there in a digital form showing on an old TV. Love might no longer exist in them (the couple in the video) anymore, but evidence of their love is still there and will be eternally stored in space. From this work, I want people to understand that love might not last forever but the love we have done exists and will forever exist in our memories and that we should treasure all the beautiful memories of being loved, rather than just sad memories of breaking up.
+          </p>
+
+         
+
+        </div>
+       
+    </div>
+    <img src="img/Lam-animation-flower.png" id="downpage"/>
+  </div>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script>
+  var $parallaxElement = $('.parallax-bg');
+var elementHeight = $parallaxElement.outerHeight();
+
+function parallax() {
+ 
+  var scrollPos = $(window).scrollTop();
+  var transformValue = scrollPos/40;
+  var opacityValue =  1 - ( scrollPos / 2000);
+  var blurValue = Math.min(scrollPos / 100, 3);
+  
+  if ( scrollPos < elementHeight ) {
+  
+    $parallaxElement.css({
+      'transform': 'translate3d(0, -' + transformValue + '%, 0)',
+      'opacity': opacityValue,
+      '-webkit-filter' : 'blur('+blurValue+'px)'
+    });
+    
+  }
+  
+}
+
+
+$(window).scroll(function() {
+  parallax();
+});
+
+</script>
+
+<script type="text/javascript">
+    document.getElementById("back").onclick = function () {
+        location.href = "portfolio.html";
+
+   };
+
+   </script>
+
+</body>
+</html>

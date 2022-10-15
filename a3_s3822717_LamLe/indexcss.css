@@ -1,0 +1,115 @@
+body {
+	background-color: #ccffff;
+	cursor: url('img/cursor3.png'), auto; 
+	
+
+}
+
+.col-md {
+	height:  300px;
+	text-align:  center;
+	margin: 10px 10px 0px;
+	
+}
+
+.col-md-3 {
+	height:  300px;
+	text-align:  center;
+}
+
+.col-md-1 {
+	height:  300px;
+	text-align:  center;
+	margin: 10px 10px 0px;
+	
+}
+
+.col-md-6 {
+	height:  300px;
+	text-align:  center;
+}
+
+
+.col-md-5 {
+	height:  300px;
+	text-align:  center;
+	margin: 10px 10px 0px;	
+}
+
+#F {
+	height:  600px;
+}
+
+#C {
+	margin-top: -19%;
+}
+
+#cat {
+	max-height: 110%;
+	max-width: 110%;
+	margin-top: 5%;
+	animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+}
+
+#contactonly {
+	max-height: 100%;
+	max-width: 100%;
+	margin-top: 10%;
+	margin-left: 2%;
+	cursor: url('img/cursor4.png'), auto; 
+	 animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; }
+
+
+#lamleonly {
+    max-height: 100%;
+	max-width: 100%;
+	padding-bottom: 10%;
+	margin-left: -10%;
+	margin-top: 25%;
+	cursor: url('img/cursor4.png'), auto;
+ animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; 
+}
+
+#portfolioonly {
+    max-height: 100%;
+	max-width: 150%;
+	
+	cursor: url('img/cursor4.png'), auto;
+	animation: slideInUp; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s; 
+
+}
+
+#animation {
+    max-height: 200%;
+	max-width: 200%;
+	margin-top: -450px;
+	margin-left: -30%;
+	cursor: url('img/cursor4.png'), auto; 
+	animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+@media (max-width:580px){
+	#F {
+		height:  550px;
+		margin-bottom: 85%;
+	}
+	#animation{
+		margin-left: -30%;
+		max-width: 90%;
+		max-height: 100%;
+	}
+
+	#portfolioonly{
+		margin-top: 0%; 
+		margin-left: 0%;
+		max-width: 70%;
+	}
+}
+
+
+

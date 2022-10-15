@@ -1,0 +1,92 @@
+body {
+	cursor: url('img/cursor3.png'), auto; 
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-image: url('img/pattern2.png');
+	background-color:  #ccffff;
+
+}
+
+.col-md {
+	
+	text-align:  center;
+	margin: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.col-md-3 {
+	
+	text-align:  center;
+	margin: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+
+
+
+#f1 {
+	max-width: 100%;
+	width: 400px;
+	margin-top: 0%;
+	padding-bottom: 20%;
+	animation: slideInUp; 
+    animation-duration: 2s; 
+
+}
+
+#f2 {
+	max-width: 100%;
+	width: 250px;
+	margin-top: -20%;
+	margin-left: -30%;
+	animation: slideInDown; 
+    animation-duration: 2s; 
+
+}
+
+#f3 {
+	max-width: 100%;
+	cursor: url('img/cursor4.png'), auto; 
+	width:  150px;
+	margin-top: 10%;
+	margin-left: 10%;
+	animation: slideInUp; 
+    animation-duration: 2s; 
+
+
+}
+
+#title {
+	max-width: 30%;
+	animation: slideInLeft; 
+    animation-duration: 2s; 
+}
+
+#back {
+    max-width: 10%;
+	cursor: url('img/cursor4.png'), auto; 
+	margin-left: 90%;	
+	margin-bottom: 30%;
+	margin-top: -10%;
+	animation: fadeIn; 
+  animation-duration: 2s; 
+}
+
+#click {
+	/*margin-top: 75%;
+	margin-left: -45%;*/
+	cursor: url('img/cursor4.png'), auto; 
+	animation: slideInUp; 
+
+  animation-duration: 2s; 
+}
+
+#short {
+	max-height: 200px;
+}
+
+#long {
+	height: 300px;
+}

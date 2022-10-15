@@ -1,0 +1,396 @@
+body {
+	background-image: url('img/pattern.png');
+	background-color:  #ffffb5;
+    cursor: url('img/cursor3.png'), auto;
+}
+
+
+#big {
+	height: 100%;
+	padding:  1rem;
+	
+}
+
+.fade {
+	
+	margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
+
+
+#downpage {
+	width:  100%;
+	margin-top: 0%;
+	
+}
+
+#back {
+	cursor: url('img/cursor4.png'), auto;
+	width:  10%;
+	margin-left: 90%;
+	margin-top: -20%;
+	animation: fadeIn; 
+  animation-duration: 4s; 	
+}
+
+#title {
+	width: 30%;
+	margin-left: 1%;
+	animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; 
+}
+
+
+/* 
+** Layout, Text & Colors 
+*/
+
+body {
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.border {
+	border-style:  hidden;
+	opacity:  0;
+}
+
+/* Cards */
+.card-column {
+  width: 50%;
+  float: left;
+  padding: 2%;
+  box-sizing: border-box;
+  border-style:  hidden;
+
+}
+
+
+
+.card {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background: #ffffb5;
+  color: #fff;
+  margin-bottom: 30%;
+ border-style:  hidden;
+
+}
+
+
+
+
+.card h1 {
+  position: relative;
+  padding: 190px 0px 100px 10px;
+  width: 90%;
+}
+
+/*-----column 1 ------*/
+
+.card-color-0 {
+  background-color: #ffffb5;
+  
+}
+
+
+
+.card-color-1 {
+  background-color: #ffffb5;
+  
+}
+
+/*#p5 {
+	max-height: 550px;
+	max-width:  500px;
+	width:  100%;
+	margin-left: auto;
+}*/
+
+.card-color-2 {
+  background-color: #ffffb5;
+  height:  100%;
+  max-height:  620px;
+}
+
+
+
+.card-color-4 {
+  background-color: #ffffb5;
+  height: 700px;
+}
+
+/*----column 2----*/
+
+.card-color-5 {
+  background-color: #ffffb5;
+  height: 180px;
+}
+
+.card-color-6 {
+  background-color: #ffffb5;
+  height: 180px;
+}
+
+
+.card-color-7 {
+  background-color: #ffffb5;
+  height: 180px;
+}
+
+
+.card-color-8 {
+  background-color: #ffffb5;
+  height: 180px;
+}
+
+.card-color-9 {
+  background-color: #ffffb5;
+  height: 620px;
+}
+
+.card-color-3 {
+  background-color: #ffffb5;
+  height: 350px;
+}
+
+.card-color-0 {
+	cursor: url('img/cursor4.png'), auto;
+	
+
+}
+
+#p13 {
+animation: slideInDown; 
+  animation-duration: 2s; 
+}
+
+#p15 {
+animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2.3s; 
+}
+
+#p14 {
+animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.1s; 
+}
+
+#p1 {
+animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.2s; 
+}
+
+#p6, #p8, #p10 {
+  animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.2s; 
+
+}
+
+#p8 {
+
+}
+
+#p11 {
+
+}
+
+#p12 {
+ 
+}
+
+#p10 {
+
+}
+
+
+/* The cover (expanding background) */
+.cover {
+  position: fixed;
+  background: #ffffb5;
+  z-index: 110;
+  transform-origin: 50% 50%;
+}
+
+/* The open page content */
+.open-content {
+  width: 90%;
+  z-index: 110;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.open-content img {
+  position: relative;
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 20px;
+  z-index: 5;
+}
+
+
+.open-content .text {
+  background: #fff;
+  margin-top: -55%;
+  padding: 60% 5% 5% 5%;
+  width: 80%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+
+}
+
+.open-content .text h1, .open-content .text p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.close-content span {
+  background: #222;
+  width: 30px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  top: 14px;
+}
+
+#back2 {
+	width: 250%;
+	margin-left: -280%;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+/* 
+** Transitions
+*/
+
+.card {
+  transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
+}
+
+.border {
+  transition: opacity 200ms linear, transform 200ms ease-out;
+}
+
+.card img {
+  transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
+}
+
+.card h1 {
+  transform: translate3d(20%, 0px, 0px);  
+  transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+}
+
+/* Clicked card */
+.card.clicked img {
+  transform: translate3d(0px, -40px, 0px);
+  opacity: 0;
+}
+
+.card.clicked .border {
+  opacity: 0;
+  transform: scale(1.3);
+}
+
+.card.out, .card.out img {
+  transform: translate3d(0px, -40px, 0px);
+  opacity: 0;
+}
+
+.card.out h1, .card.clicked h1 {
+  transform: translate3d(20%, -40px, 0px);
+  opacity: 0;
+}
+
+.cover {
+  transition: transform 300ms ease-in-out;
+}
+
+.open-content {
+  transition: opacity 200ms linear 0ms;
+}
+
+.open-content.open {
+  opacity: 1;
+  pointer-events: all;
+  transition-delay: 1000ms;
+}
+
+/* 
+** Media Queries
+*/
+
+@media screen and (max-width: 600px) {
+  .card-column {
+    width: 90%;
+  }
+  
+  .column-1 {
+    padding-top: 0px;
+  }
+  
+  .open-content img {
+    margin-top: 40px;
+  }
+}
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+

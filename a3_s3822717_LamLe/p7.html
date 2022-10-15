@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link href="p7.css" rel="stylesheet" >
+
+    <title> Lam Le Portfolio </title>
+
+  </head>
+ <body>
+  <div class="page">
+  
+    <div class="intro-header">
+      <div class="bg-image parallax-bg">
+      
+      </div>
+      <div class="header-content row">
+        
+        <img src="img/back.png" id="back"
+         onmouseover="this.src='img/backhover.png'"
+         onmouseout="this.src='img/back.png'"/>
+        
+
+         <img src="img/titleportfolio.png" id="title"/>
+        <h2>3D Model and Walk Cycle</h2> 
+
+      </div>
+    </div>
+    <div class="content">
+      
+       <br>
+
+       <div class="clearfix"></div> 
+
+      <div class="row">
+
+          <h1>About</h1>
+          <p>
+          This is a part of a project made for an assignment for RMIT University (Bachelor of Digital Media). 
+          The brief is to create a 3D character design and a walk cycle animation out of that character. 
+          I chose to create a puppet who comes from the future and has the ability to travel to different timelines to kill important people in the history.
+
+          </p>
+          <p> </p>
+          <iframe width="560" height="515" src="https://www.youtube.com/embed/knnSZn7OfPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+
+
+<div class="clearfix"></div>
+      <div class="row">
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <h1> Process </h1>
+        <p> </p>
+        <div class="responsive">
+  <div class="gallery">
+   
+      <img src="img/coatpattern4.png" alt="Cinque Terre" width="600" height="400">
+    
+    <div class="desc"> Pattern 1</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+   
+      <img src="img/coatpattern.png" alt="Forest" width="600" height="400">
+ 
+    <div class="desc"> Pattern 2</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+   
+      <img src="img/coatpattern2.png" alt="Northern Lights" width="600" height="400">
+  
+    <div class="desc">Pattern 3</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    
+      <img src="img/hatpattern.png" alt="Mountains" width="600" height="400">
+  
+    <div class="desc">Pattern 4</div>
+  </div>
+</div>
+
+<div class="responsive3">
+  <div class="gallery">
+   
+      <img src="img/extinctiondoll.png" alt="Mountains" width="600" height="400">
+
+    <div class="desc">Model Design</div>
+  </div>
+</div>
+
+       
+        <p> </p>
+          <p>
+          The design inspiration is from Vietnamese traditional water puppets and Vietnamese clothes like Non Quai Thao and Ao Nhat Binh. Since my character can travel through different timelines, it collects clothes of the people it kills and wears it to cover its puppet body and pretend to be a human. For the colour and styles, I was influenced by cyperpunk since it gives a futuristic feelings which suits the origin of the puppet. The colourful clothes also give the puppet a cute and harmless look which is to hide its killing intention. 
+          </p>
+           <div class="responsive2">
+            <div class="gallery">
+    
+      <img src="img/process3.png" alt="Cinque Terre" width="600" height="400">
+  
+    <div class="desc"> Blender File </div>
+  </div>
+</div>
+
+
+<div class="responsive2">
+  <div class="gallery">
+  
+      <img src="img/process4.png" alt="Forest" width="600" height="400">
+  
+    <div class="desc"> Substance Painter File </div>
+  </div>
+</div>
+
+
+          <p> The process of making the animation follows by these steps: </p>
+            <ul>
+                <li>Character Modelling in Blender </li> 
+                <li>Textures in Adobe Illustrator </li>
+                <li>UV editing in Blender </li>
+                <li>Add Texture to model in Substance Painter </li>
+                <li>Amature in Blender </li>
+                <li>Weight Painting in Blender </li>
+                <li>Walk Cycle in Blender </li>
+            </ul>
+
+          </p>
+
+        </div>
+       
+    </div>
+    <img src="img/Lam-animation-flower.png" id="downpage"/>
+  </div>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script>
+  var $parallaxElement = $('.parallax-bg');
+var elementHeight = $parallaxElement.outerHeight();
+
+function parallax() {
+ 
+  var scrollPos = $(window).scrollTop();
+  var transformValue = scrollPos/40;
+  var opacityValue =  1 - ( scrollPos / 2000);
+  var blurValue = Math.min(scrollPos / 100, 3);
+  
+  if ( scrollPos < elementHeight ) {
+  
+    $parallaxElement.css({
+      'transform': 'translate3d(0, -' + transformValue + '%, 0)',
+      'opacity': opacityValue,
+      '-webkit-filter' : 'blur('+blurValue+'px)'
+    });
+    
+  }
+  
+}
+
+
+$(window).scroll(function() {
+  parallax();
+});
+
+</script>
+
+<script type="text/javascript">
+    document.getElementById("back").onclick = function () {
+        location.href = "portfolio.html";
+
+   };
+
+   </script>
+
+</body>
+</html>

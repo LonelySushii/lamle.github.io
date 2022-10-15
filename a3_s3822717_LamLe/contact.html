@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link href="contact.css" rel="stylesheet" >
+
+    <title> Lam Le Portfolio </title>
+
+  </head>
+  <body>
+    <div class= "container-md">
+    <div class="row" id="short">
+        
+         <img src="img/titlecontact.png" id="title"/> 
+        
+         <img src="img/back.png" id="back"
+         onmouseover="this.src='img/backhover.png'"
+         onmouseout="this.src='img/back.png'"/>
+         
+</div>
+         <div class="row justify-content-center">
+          <div class="col-md-3 col-sm col-xs"> 
+           <img src="img/linkedinonly.png" id="fb"
+         onmouseover="this.src='img/linkedin.png'"
+         onmouseout="this.src='img/linkedinonly.png'"/>
+
+           </div>
+          <div class="col-md-3 col-sm col-xs"> 
+          <img src="img/instagramonly.png" id="insta"
+         onmouseover="this.src='img/instagram.png'"
+         onmouseout="this.src='img/instagramonly.png'"/> 
+        </div>
+      
+
+        <div class="col-md-3 col-sm col-xs"> 
+        <img src="img/gmailonly.png" id="gmail"
+         onmouseover="this.src='img/gmail.png'"
+         onmouseout="this.src='img/gmailonly.png'"/>
+          </div>
+
+      
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    document.getElementById("fb").onclick = function () {
+        location.href = "https://www.linkedin.com/in/le-n-2333b910a/";
+    };
+
+    document.getElementById("insta").onclick = function () {
+        location.href = "https://www.instagram.com/lonelysushi__/";
+    };
+
+    document.getElementById("gmail").onclick = function () {
+        location.href = "mailto:lenhilam1234@gmail.com";
+    };
+
+    document.getElementById("back").onclick = function () {
+        location.href = "index.html";
+    };
+
+  
+</script>
+  </body>
+</html>

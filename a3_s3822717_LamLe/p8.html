@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link href="p8.css" rel="stylesheet" >
+
+    <title> Lam Le Portfolio </title>
+
+  </head>
+ <body>
+  <div class="page">
+
+    <div class="intro-header">
+      <div class="bg-image parallax-bg">
+      
+      </div>
+      <div class="header-content row">
+        
+        <img src="img/back.png" id="back"
+         onmouseover="this.src='img/backhover.png'"
+         onmouseout="this.src='img/back.png'"/>
+        
+
+         <img src="img/titleportfolio.png" id="title"/>
+        <h2>3D Animation</h2> 
+
+      </div>
+    </div>
+    <div class="content">
+      
+       <br>
+
+       <div class="clearfix"></div> 
+
+      <div class="row">
+
+          <h1>About</h1>
+          <p>
+          This is a part of a project made for an assignment for RMIT University (Bachelor of Digital Media). 
+          The brief is to create a 'reveal' animation.
+          I decided to create an animation that reveals the shining ball after its long journey of reaching to the top.
+
+          </p>
+          <p> </p>
+          <iframe width="560" height="515" src="https://www.youtube.com/embed/ED_CuxYuXFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+
+
+<div class="clearfix"></div>
+     
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <h1> Process </h1>
+        <p> </p> 
+          <p>
+          The concept of my work is chasing dream or ambition. In summary, the animation is about a ball tries to roll around and reach the other ball that is placed on a high pillar upon the endless sky. This symbolises a process of a person trying to achieve their goals and ambition.
+          </p><div class="row">
+        <div class="responsive2">
+  <div class="gallery">
+    
+      <img src="img/storyboard1.png"  width="600" height="400">
+  
+    <div class="desc"> Storyboard 1</div>
+  </div>
+</div>
+
+
+<div class="responsive2">
+  <div class="gallery">
+    
+      <img src="img/storyboard2.png" alt="Forest" width="600" height="400">
+  
+    <div class="desc"> Storyboard 2</div>
+  </div>
+</div>
+</div>
+
+       
+        <p> </p>
+          
+          <p>
+            I use transition between light and dark to show the change in the emotion of the ball. The darkness represents its jealousy and strong determination of getting on top. While the light represents hope and admiration. The POV of the ball is always ant eye view to enhance its position which is lower. So to reach the higher ball, it requires great sacrifice by the ball having to jump and fall down to the endless sky.
+
+          </p>
+
+          <p>
+            After accomplishing the challenge, the ball finally stands closer to its goal. It passes through the mirror, which represents the challege of surpassing itself. It then gazes upon the higher ball after getting through the challenge. However, the higher ball starts cracking and explodes. The ending can be understood as the ball has achieved its dream and so the higher ball that it longs wanted has no longer existed and so it disappeared.
+
+          </p>
+           <div class="responsive2">
+            <div class="gallery">
+   
+      <img src="img/process5.png" alt="Cinque Terre" width="600" height="400">
+
+    <div class="desc"> Blender File 1</div>
+  </div>
+</div>
+
+
+<div class="responsive2">
+  <div class="gallery">
+    
+      <img src="img/0100.png" alt="Forest" width="600" height="400">
+ 
+    <div class="desc"> Blender File 2</div>
+  </div>
+</div>
+
+
+          <p>
+            The animation is based on physics. Specifically rigid body, force and gravity. I use force to move the object, wind to move the curtain and gravity to make the object fall. I make the curtain using cloth and pin group. The explosion animation is created using cell fracture and light from principle volume.
+          </p>
+
+        </div>
+       
+    </div>
+    <img src="img/Lam-animation-flower.png" id="downpage"/>
+  </div>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script>
+  var $parallaxElement = $('.parallax-bg');
+var elementHeight = $parallaxElement.outerHeight();
+
+function parallax() {
+ 
+  var scrollPos = $(window).scrollTop();
+  var transformValue = scrollPos/40;
+  var opacityValue =  1 - ( scrollPos / 2000);
+  var blurValue = Math.min(scrollPos / 100, 3);
+  
+  if ( scrollPos < elementHeight ) {
+  
+    $parallaxElement.css({
+      'transform': 'translate3d(0, -' + transformValue + '%, 0)',
+      'opacity': opacityValue,
+      '-webkit-filter' : 'blur('+blurValue+'px)'
+    });
+    
+  }
+  
+}
+
+
+$(window).scroll(function() {
+  parallax();
+});
+
+</script>
+
+<script type="text/javascript">
+    document.getElementById("back").onclick = function () {
+        location.href = "portfolio.html";
+
+   };
+
+   </script>
+
+</body>
+</html>
