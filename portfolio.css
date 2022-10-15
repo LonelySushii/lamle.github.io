@@ -17,7 +17,6 @@ body {
   opacity: 1;
 }
 
-
 #downpage {
 	width:  100%;
 	margin-top: 0%;
@@ -369,6 +368,12 @@ p {
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #back {
+    max-width: 15%;
   }
 }
 
