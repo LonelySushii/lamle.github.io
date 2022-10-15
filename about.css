@@ -52,17 +52,17 @@ body {
 #title {
 	max-width: 30%;
 	animation: slideInLeft; 
-    animation-duration: 2s; 
+   	animation-duration: 2s; 
 }
 
 #back {
-    max-width: 20%;
+    	max-width: 15%;
 	cursor: url('img/cursor4.png'), auto; 
 	margin-left: 80%;	
 	margin-bottom: 30%;
 	margin-top: -10%;
 	animation: fadeIn; 
-  animation-duration: 2s; 
+	animation-duration: 2s; 
 }
 
 #click {
@@ -70,7 +70,7 @@ body {
 	margin-left: -45%;*/
 	cursor: url('img/cursor4.png'), auto; 
 	animation: slideInUp; 
-    animation-duration: 2s; 
+   	animation-duration: 2s; 
 }
 
 #short {
