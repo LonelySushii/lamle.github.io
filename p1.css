@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Leckerli+One);
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
   padding: 0;
   margin: 0;
@@ -143,15 +145,12 @@ h2 {
 
 #back {
   cursor: url('img/cursor4.png'), auto;
-  max-width:  10%;
+  max-width:  20%;
   margin-left: 80%;
   margin-top: -20%; 
   animation: fadeIn; 
   animation-duration: 2s; 
 }
-
-
-
 
 div.gallery img {
   width: 100%;
@@ -163,7 +162,7 @@ div.desc {
   text-align: center;
 }
 
-* {
+*{
   box-sizing: border-box;
 }
 
@@ -208,10 +207,8 @@ div.desc {
   width:  100%;
   margin-top: -58%;
   z-index: 1000;
-  
 }
 
 iframe {
   z-index: 1;
- 
 }
