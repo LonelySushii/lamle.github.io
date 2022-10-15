@@ -44,6 +44,7 @@ h1, h2 {
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
+
 .intro-header .bg-image {
   position: absolute;
   width: 100%;
@@ -146,7 +147,7 @@ h2 {
 
 #back {
   cursor: url('img/cursor4.png'), auto;
-  max-width:  20%;
+  max-width:  8%;
   margin-left: 80%;
   margin-top: -20%; 
   animation: fadeIn; 
@@ -189,6 +190,10 @@ div.desc {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
+  }
+
+  #back{
+    max-width: 15%;
   }
 }
 
