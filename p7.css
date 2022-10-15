@@ -145,7 +145,7 @@ h2 {
 
 #back {
   cursor: url('img/cursor4.png'), auto;
-  max-width:  20%;
+  max-width:  8%;
   margin-left: 80%;
   margin-top: -20%; 
   animation: fadeIn; 
@@ -188,6 +188,10 @@ div.desc {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
+  }
+  
+  #back{
+    max-width: 15%;
   }
 }
 

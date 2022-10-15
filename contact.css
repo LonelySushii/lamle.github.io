@@ -32,7 +32,7 @@ body {
 }
 
 #back {
-    max-width: 20%;
+    max-width: 8%;
 	cursor: url('img/cursor4.png'), auto; 
 	margin-left: 80%;	
 	margin-bottom: 30%;
@@ -74,3 +74,9 @@ body {
     animation-duration: 2s; 
 }
 
+@media only screen and (max-width: 700px) {  
+	#back{
+	  max-width: 15%;
+	}
+  }
+  
