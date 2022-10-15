@@ -4,11 +4,9 @@ body {
 	margin-bottom: 1%;
 	background-image: url('img/pattern2.png');
 	background-color:  #ccffff;
-
 }
 
 .col-md {
-	
 	text-align:  center;
 	margin: 10px;
 	margin-left: 1%;
@@ -16,14 +14,11 @@ body {
 }
 
 .col-md-3 {
-	
 	text-align:  center;
 	margin: 10px;
 	margin-left: 1%;
 	margin-right: 1%;
 }
-
-
 
 
 #f1 {
@@ -33,7 +28,6 @@ body {
 	padding-bottom: 20%;
 	animation: slideInUp; 
     animation-duration: 2s; 
-
 }
 
 #f2 {
@@ -43,7 +37,6 @@ body {
 	margin-left: -30%;
 	animation: slideInDown; 
     animation-duration: 2s; 
-
 }
 
 #f3 {
@@ -54,8 +47,6 @@ body {
 	margin-left: 10%;
 	animation: slideInUp; 
     animation-duration: 2s; 
-
-
 }
 
 #title {
@@ -65,9 +56,9 @@ body {
 }
 
 #back {
-    max-width: 10%;
+    max-width: 20%;
 	cursor: url('img/cursor4.png'), auto; 
-	margin-left: 90%;	
+	margin-left: 80%;	
 	margin-bottom: 30%;
 	margin-top: -10%;
 	animation: fadeIn; 
@@ -79,8 +70,7 @@ body {
 	margin-left: -45%;*/
 	cursor: url('img/cursor4.png'), auto; 
 	animation: slideInUp; 
-
-  animation-duration: 2s; 
+    animation-duration: 2s; 
 }
 
 #short {

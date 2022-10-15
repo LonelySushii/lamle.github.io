@@ -1,15 +1,12 @@
 body {
 	background-color: #ccffff;
 	cursor: url('img/cursor3.png'), auto; 
-	
-
 }
 
 .col-md {
 	height:  300px;
 	text-align:  center;
 	margin: 10px 10px 0px;
-	
 }
 
 .col-md-3 {
@@ -20,15 +17,13 @@ body {
 .col-md-1 {
 	height:  300px;
 	text-align:  center;
-	margin: 10px 10px 0px;
-	
+	margin: 10px 10px 0px;	
 }
 
 .col-md-6 {
 	height:  300px;
 	text-align:  center;
 }
-
 
 .col-md-5 {
 	height:  300px;
@@ -58,8 +53,9 @@ body {
 	margin-top: 10%;
 	margin-left: 2%;
 	cursor: url('img/cursor4.png'), auto; 
-	 animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; }
+	animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 2s;
+ }
 
 
 #lamleonly {
@@ -69,47 +65,55 @@ body {
 	margin-left: -10%;
 	margin-top: 25%;
 	cursor: url('img/cursor4.png'), auto;
- animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; 
+ 	animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 2s; 
 }
 
 #portfolioonly {
     max-height: 100%;
-	max-width: 150%;
-	
+	max-width: 100%;
+	margin-left: -35%;
 	cursor: url('img/cursor4.png'), auto;
 	animation: slideInUp; /* referring directly to the animation's @keyframe declaration */
-   animation-duration: 2s; 
-
+   	animation-duration: 2s; 
 }
 
 #animation {
     max-height: 200%;
 	max-width: 200%;
 	margin-top: -450px;
-	margin-left: -30%;
+	margin-left: -60%;
 	cursor: url('img/cursor4.png'), auto; 
 	animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
 }
 
-@media (max-width:580px){
-	#F {
-		height:  550px;
-		margin-bottom: 85%;
-	}
-	#animation{
-		margin-left: -30%;
-		max-width: 90%;
-		max-height: 100%;
+@media screen and (max-width:780px){
+	#F{
+		margin-bottom: 120%;
 	}
 
-	#portfolioonly{
-		margin-top: 0%; 
-		margin-left: 0%;
-		max-width: 70%;
+	#animation{
+		margin-right: -60%;
+	}
+
+	#portfolioonly{ 
+		margin-top: 1%;
+		margin-left: 20%;	
 	}
 }
 
+@media screen and (max-width:1080px){
+
+	#animation{
+		margin-top: -135%;
+		margin-left: -75%;
+	}
+
+	#C{
+		margin-left: -20%;
+		margin-top: -40%;
+	}
+}
 
 

@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Leckerli+One);
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
   padding: 0;
   margin: 0;
@@ -15,13 +17,11 @@ h1, h2 {
   margin: 0;
   font-family: "Leckerli One", cursive;
   text-shadow: 0 2px rgba(0, 0, 0, 0.5);
-  
 }
 
 .row {
   max-width: 80%;
   margin: 0 auto;
-
 }
 
 .intro-header {
@@ -33,6 +33,7 @@ h1, h2 {
   display: table;
   z-index: -1;
 }
+
 .intro-header:before {
   content: "";
   position: absolute;
@@ -43,6 +44,7 @@ h1, h2 {
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
+
 .intro-header .bg-image {
   position: absolute;
   width: 100%;
@@ -51,12 +53,12 @@ h1, h2 {
   left: 0;
   background: url('img/banner2.jpg') center center no-repeat;
   background-size: cover;
-
 }
 
 .bg-image {
   width:  50%;
 }
+
 h2 {
 
   -webkit-animation: slide-in-blurred-bottom 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -76,6 +78,7 @@ h2 {
  * animation slide-in-blurred-bottom
  * ----------------------------------------
  */
+
 @-webkit-keyframes slide-in-blurred-bottom {
   0% {
     -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
@@ -96,6 +99,7 @@ h2 {
     opacity: 1;
   }
 }
+
 @keyframes slide-in-blurred-bottom {
   0% {
     -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
@@ -121,6 +125,7 @@ h2 {
   animation: slideInUp; 
   animation-duration: 2s; 
 }
+
 .intro-header .header-content {
   position: relative;
   text-align: center;
@@ -146,15 +151,12 @@ h2 {
 
 #back {
   cursor: url('img/cursor4.png'), auto;
-  max-width:  10%;
+  max-width:  20%;
   margin-left: 80%;
   margin-top: -20%; 
   animation: fadeIn; 
   animation-duration: 2s; 
 }
-
-
-
 
 div.gallery img {
   width: 100%;
@@ -211,10 +213,8 @@ div.desc {
   width:  100%;
   margin-top: -58%;
   z-index: 1000;
-  
 }
 
 iframe {
   z-index: 1;
- 
 }
