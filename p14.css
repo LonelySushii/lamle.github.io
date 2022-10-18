@@ -131,7 +131,7 @@ h2 {
 }
 
 .content {
-  height: 420vh;
+  height: 430vh;
   padding: 50px;
   background: #c099d5;
   margin-top: 100vh;
@@ -211,7 +211,7 @@ div.desc {
 
 #downpage {
   width:  100%;
-  margin-top: -30%;
+  margin-top: -40%;
   z-index: 1000;
 }
 
